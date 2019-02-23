@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".Money"
+            android:label="@string/title_activity_money"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Fitness"
+            android:label="@string/title_activity_fitness"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

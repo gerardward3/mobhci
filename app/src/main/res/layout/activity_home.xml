@@ -54,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="launchMoney"
             android:text="@string/nav_money" />
 
         <Button
@@ -65,11 +66,12 @@
             android:text="@string/nav_env" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/fitness_button"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="launchFitness"
             android:text="@string/nav_fitness" />
     </LinearLayout>
 

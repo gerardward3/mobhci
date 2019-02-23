@@ -6,4 +6,37 @@
     <string name="nav_money">Money</string>
     <string name="nav_env">Environment</string>
     <string name="nav_fitness">Fitness</string>
+    <string name="title_activity_fitness">Fitness</string>
+
+    <!-- Fitness Activity -->
+    <string name="distance_travelled_title">Total Distance Travelled</string>
+    <string name="distance_travelled_value">1234 miles</string>
+    <string name="time_travelled_title">Total Travel Time</string>
+    <string name="time_travelled_value">123 hours</string>
+    <string name="average_speed_title">Average Speed</string>
+    <string name="average_speed_value">12 mph</string>
+    <string name="back_button">Back</string>
+
+    <!-- Money Activity -->
+    <string name="today_savings_title">Today\'s Savings</string>
+    <string name="today_savings_value">12.34</string>
+    <string name="month_savings_title">This Month\'s Savings</string>
+    <string name="month_savings_value">123.45</string>
+    <string name="total_savings_title">Overall Savings</string>
+    <string name="total_savings_value">1234.56</string>
+    <string name="pound_sign">£</string>
+    <string name="title_activity_money">Money</string>
+    <string name="compare_overall">All Transport</string>
+    <string name="compare_bus">Compared to Bus</string>
+    <string name="compare_uber">Compared to Uber</string>
+    <string name="switch_right">&gt;</string>
+    <string name="switch_left">&lt;</string>
+    <string name="today_savings_bus">6.34</string>
+    <string name="month_savings_bus">60.45</string>
+    <string name="total_savings_bus">600.56</string>
+    <string name="today_savings_uber">6.00</string>
+    <string name="month_savings_uber">63.00</string>
+    <string name="total_savings_uber">634.00</string>
+
+
 </resources>
