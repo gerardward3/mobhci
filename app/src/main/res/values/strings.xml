@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">mhci</string>
+    <string name="app_name">*App Name Goes Here*</string>
     <string name="unlock_bike">Unlock Bike</string>
+    <string name="result_text_default">Please focus camera to QR code</string>
 
     <!-- Navigation Buttons -->
     <string name="nav_money">Money</string>

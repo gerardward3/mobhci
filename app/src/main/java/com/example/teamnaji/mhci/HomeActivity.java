@@ -21,4 +21,8 @@ public class HomeActivity extends AppCompatActivity {
     public void launchMoney(View v){
         startActivity(new Intent(HomeActivity.this, Money.class));
     }
+
+    public void unlockBike(View v) {
+        startActivity(new Intent(HomeActivity.this, UnlockBike.class));
+    }
 }
