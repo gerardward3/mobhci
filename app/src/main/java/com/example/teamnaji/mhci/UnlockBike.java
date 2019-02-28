@@ -16,4 +16,8 @@ public class UnlockBike extends AppCompatActivity {
     public void qrCodeScanner(View v) {
         startActivity(new Intent(UnlockBike.this, QrCodeScanner.class));
     }
+
+    public void ManualCodeEnter(View v) {
+        startActivity(new Intent(UnlockBike.this, ManualCodeEnter.class));
+    }
 }

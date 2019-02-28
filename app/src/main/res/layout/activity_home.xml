@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:background="@drawable/homepage_background"
+    android:background="#3a424d"
     >
 
     <Button
@@ -24,6 +24,7 @@
         android:onClick="unlockBike"
         android:padding="10dp"
         android:text="@string/unlock_bike"
+        android:textColor="#f1f1f1"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

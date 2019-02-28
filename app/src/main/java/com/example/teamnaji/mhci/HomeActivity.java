@@ -23,6 +23,6 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void unlockBike(View v) {
-        startActivity(new Intent(HomeActivity.this, UnlockBike.class));
+        startActivity(new Intent(HomeActivity.this, QrCodeScanner.class));
     }
 }
