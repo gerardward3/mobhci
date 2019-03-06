@@ -2,6 +2,7 @@ package com.example.teamnaji.mhci;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Vibrator;
 import android.support.annotation.NonNull;
@@ -97,8 +98,11 @@ public class QrCodeScanner extends AppCompatActivity {
                         @Override
                         public void run() {
                             Vibrator vibrator = (Vibrator)getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
-                            vibrator.vibrate(1000);
-                            txtResult.setText(qrcodes.valueAt(0).displayValue);
+                            vibrator.vibrate(500);
+                            String bikeCode = qrcodes.valueAt(0).displayValue;
+                            Intent i = new Intent(QrCodeScanner.this, CodeAcceptedScreen.class);
+                            i.putExtra("bikeCode", bikeCode);
+                            startActivity(i);
                         }
                     });
                 }
