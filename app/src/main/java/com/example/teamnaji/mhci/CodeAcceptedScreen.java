@@ -22,7 +22,7 @@ public class CodeAcceptedScreen extends AppCompatActivity {
         bikeCodeText.setText("Bike " + bikeCode + " unlocked!");
     }
 
-    public void launchHome(View v){
-        startActivity(new Intent(CodeAcceptedScreen.this, HomeActivity.class));
+    public void launchCycle(View v){
+        startActivity(new Intent(CodeAcceptedScreen.this, CycleProgressScreen.class));
     }
 }

@@ -27,7 +27,7 @@
     <TextView
         android:id="@+id/txtResult"
         android:layout_width="match_parent"
-        android:layout_height="15dp"
+        android:layout_height="25dp"
         android:layout_below="@id/cameraPreview"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="8dp"
@@ -37,6 +37,7 @@
         android:layout_marginRight="8dp"
         android:gravity="center_horizontal"
         android:text="@string/result_text_default"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cameraPreview" />
@@ -50,6 +51,7 @@
         android:gravity="center"
         android:hint="Enter code"
         android:inputType="number"
+        android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +65,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:text="Scan QR Code"
+        android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -73,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="OR"
+        android:textColor="@color/colorPrimary"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
