@@ -38,7 +38,8 @@
         </activity>
         <activity android:name=".UnlockBike" />
         <activity android:name=".QrCodeScanner" />
-        <activity android:name=".CodeAcceptedScreen"></activity>
+        <activity android:name=".CodeAcceptedScreen" />
+        <activity android:name=".CycleProgressScreen"></activity>
     </application>
 
 </manifest>
