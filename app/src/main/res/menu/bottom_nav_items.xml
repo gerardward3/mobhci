@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottombaritem_home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/bottombaritem_environment"
+        android:icon="@drawable/noun_leaf"
+        android:title="Environment"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/bottombaritem_money"
+        android:icon="@drawable/piggy_bank"
+        android:title="Money"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/bottombaritem_fitness"
+        android:icon="@drawable/weightlifting"
+        android:title="Fitness"
+        app:showAsAction="ifRoom"/>
+
+</menu>

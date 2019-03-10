@@ -19,6 +19,6 @@ public class CycleProgressScreen extends AppCompatActivity {
     }
 
     public void endCycle(View v){
-        startActivity(new Intent(CycleProgressScreen.this, HomeActivity.class));
+        startActivity(new Intent(CycleProgressScreen.this, MainActivity.class));
     }
 }
