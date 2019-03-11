@@ -18,7 +18,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ManualCodeEnter"
-            android:label="@string/title_activity_manual_code_enter" />
+            android:label="@string/title_activity_manual_code_enter"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".Money"
             android:label="@string/title_activity_money"
@@ -40,10 +41,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UnlockBike" />
-        <activity android:name=".QrCodeScanner" />
-        <activity android:name=".CodeAcceptedScreen" />
-        <activity android:name=".CycleProgressScreen"></activity>
+        <activity
+            android:name=".UnlockBike"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".QrCodeScanner"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".CodeAcceptedScreen"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".CycleProgressScreen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

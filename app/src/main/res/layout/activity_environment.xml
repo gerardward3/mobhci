@@ -1,22 +1,339 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnvironmentActivity" >
+    tools:context=".EnvironmentFragment"
+    tools:layout_editor_absoluteY="81dp">
 
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/bottomNavigation"
+
+    <LinearLayout
+        android:id="@+id/horizon1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:itemBackground="@drawable/drawable_green_gradient"
-        app:itemIconTint="@drawable/bottom_nav_colors"
-        app:itemTextColor="@drawable/bottom_nav_colors"
-        app:menu="@menu/bottom_nav_items" />
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Trees planted this month:"
+            android:textSize="16sp"
+            android:textColor="@color/green700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Reduced CO2 emmisions:"
+            android:textColor="@color/green700"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-</RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/horizon2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/horizon1"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="185dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="35"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="93dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/progressBar"
+                android:layout_alignLeft="@+id/progressBar"
+                android:layout_alignTop="@+id/progressBar"
+                android:layout_alignEnd="@+id/progressBar"
+                android:layout_alignRight="@+id/progressBar"
+                android:layout_alignBottom="@+id/progressBar"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="75dp"
+                android:gravity="center"
+                android:text="2.1"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="84dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/progressBar"
+                android:layout_alignLeft="@+id/progressBar"
+                android:layout_alignTop="@+id/progressBar"
+                android:layout_alignEnd="@+id/progressBar"
+                android:layout_alignRight="@+id/progressBar"
+                android:layout_alignBottom="@+id/progressBar"
+                android:layout_marginStart="51dp"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="91dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="49dp"
+                android:gravity="center"
+                android:text="@string/target"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="71dp"
+                android:layout_height="18dp"
+                android:layout_alignStart="@+id/progressBar"
+                android:layout_alignLeft="@+id/progressBar"
+                android:layout_alignTop="@+id/progressBar"
+                android:layout_alignEnd="@+id/progressBar"
+                android:layout_alignRight="@+id/progressBar"
+                android:layout_alignBottom="@+id/progressBar"
+                android:layout_marginStart="58dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="108dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginRight="56dp"
+                android:layout_marginBottom="34dp"
+                android:gravity="center"
+                android:text="5"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:id="@+id/progressBar4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="185dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="65"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="117dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/progressBar4"
+                android:layout_alignLeft="@+id/progressBar4"
+                android:layout_alignTop="@+id/progressBar4"
+                android:layout_alignEnd="@+id/progressBar4"
+                android:layout_alignRight="@+id/progressBar4"
+                android:layout_alignBottom="@+id/progressBar4"
+                android:layout_marginStart="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="77dp"
+                android:gravity="center"
+                android:text="@string/emissions"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="89dp"
+                android:layout_height="18dp"
+                android:layout_alignStart="@+id/progressBar4"
+                android:layout_alignLeft="@+id/progressBar4"
+                android:layout_alignTop="@+id/progressBar4"
+                android:layout_alignEnd="@+id/progressBar4"
+                android:layout_alignRight="@+id/progressBar4"
+                android:layout_alignBottom="@+id/progressBar4"
+                android:layout_marginStart="49dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:text="@string/target"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/progressBar4"
+                android:layout_alignLeft="@+id/progressBar4"
+                android:layout_alignTop="@+id/progressBar4"
+                android:layout_alignEnd="@+id/progressBar4"
+                android:layout_alignRight="@+id/progressBar4"
+                android:layout_alignBottom="@+id/progressBar4"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="107dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="37dp"
+                android:gravity="center"
+                android:text="3 tCO2e"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizon2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardElevation="5dp"
+                app:contentPadding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.7 trees"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="planted by you."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardElevation="5dp"
+                app:contentPadding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="245,641 trees"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="planted by BestBike users worldwide"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

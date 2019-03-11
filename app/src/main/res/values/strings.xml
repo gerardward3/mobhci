@@ -3,6 +3,11 @@
     <string name="unlock_bike">Unlock Bike</string>
     <string name="result_text_default">Please focus camera to QR code</string>
 
+    <!-- Homepage Card Titles -->
+    <string name="card_money">Money Saved</string>
+    <string name="card_environment">Trees Planted</string>
+    <string name="card_fitness">Distance Travelled</string>
+
     <!-- Navigation Buttons -->
     <string name="nav_money">Money</string>
     <string name="nav_env">Environment</string>
@@ -10,12 +15,12 @@
     <string name="title_activity_fitness">Fitness</string>
 
     <!-- Fitness Activity -->
-    <string name="distance_travelled_title">Total Distance Travelled</string>
-    <string name="distance_travelled_value">1234 miles</string>
+    <string name="distance_travelled_title">Distance Travelled</string>
+    <string name="distance_travelled_value">98 miles</string>
     <string name="time_travelled_title">Total Travel Time</string>
-    <string name="time_travelled_value">123 hours</string>
-    <string name="average_speed_title">Average Speed</string>
-    <string name="average_speed_value">12 mph</string>
+    <string name="time_travelled_value">12.5 hours</string>
+    <string name="calories_burned">Calories Burned</string>
+    <string name="calories_burned_value">1567</string>
     <string name="back_button">Back</string>
 
     <!-- Money Activity -->
@@ -39,13 +44,15 @@
     <string name="month_savings_uber">63.00</string>
     <string name="total_savings_uber">634.00</string>
     <string name="target">Target</string>
-    <string name="daily_target">£20</string>
+    <string name="daily_target">£15</string>
     <string name="monthly_target">£200</string>
-    <string name="overall_target">£2000</string>
+    <string name="overall_target">£5000</string>
     <string name="title_activity_manual_code_enter">ManualCodeEnter</string>
 
     <string name="trees_planted_today">Trees Planted Today</string>
-    <string name="trees_planted_today_value">6</string>
+    <string name="trees_planted_today_value">0.9</string>
+    <string name="trees_planted_month_value">75</string>
+    <string name="emissions">2 tCO2e</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
