@@ -20,12 +20,12 @@
 
             <android.support.v7.widget.CardView
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/moneyCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="25dp"
-                android:onClick="launchMoney">
+                android:layout_marginTop="25dp">
 
                 <ImageView
                     android:src="@drawable/gradient_background"
@@ -59,7 +59,8 @@
                             android:layout_width="70dp"
                             android:layout_height="70dp"
                             android:layout_margin="20dp"
-                            android:src="@drawable/money" />
+                            android:tint="@android:color/white"
+                            android:src="@drawable/piggy_bank" />
 
                         <Space
                             android:layout_width="0dp"
@@ -70,17 +71,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:textColor="#ffffff"
                             android:text="@string/pound_sign"
-                            android:textSize="50sp" />
+                            android:textColor="#ffffff"
+                            android:textSize="35sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:textColor="#ffffff"
                             android:text="@string/today_savings_value"
-                            android:textSize="50sp" />
+                            android:textColor="#ffffff"
+                            android:textSize="35sp" />
 
                         <Space
                             android:layout_width="0dp"
@@ -96,7 +97,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
-                android:onClick="launchFitness">
+                android:id="@+id/environmentCard">
 
                 <ImageView
                     android:src="@drawable/gradient_background"
@@ -128,7 +129,8 @@
                             android:id="@+id/imageView2"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/tree"
+                            android:src="@drawable/noun_leaf"
+                            android:tint="@android:color/white"
                             android:layout_margin="20dp"/>
 
                         <Space
@@ -140,9 +142,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:textColor="#ffffff"
                             android:text="@string/trees_planted_today_value"
-                            android:textSize="50sp" />
+                            android:textColor="#ffffff"
+                            android:textSize="35sp" />
 
                         <Space
                             android:layout_width="0dp"
@@ -158,7 +160,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
-                android:onClick="launchFitness">
+                android:id="@+id/fitnessCard">
 
                 <ImageView
                     android:src="@drawable/gradient_background"
@@ -190,7 +192,8 @@
                             android:id="@+id/imageView3"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/bicycle_icon"
+                            android:src="@drawable/weightlifting"
+                            android:tint="@android:color/white"
                             android:layout_margin="20dp"/>
 
                         <Space
@@ -202,9 +205,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:textColor="#ffffff"
                             android:text="@string/distance_travelled_value"
-                            android:textSize="50sp" />
+                            android:textColor="#ffffff"
+                            android:textSize="35sp" />
 
                         <Space
                             android:layout_width="0dp"

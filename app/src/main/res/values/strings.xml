@@ -30,14 +30,18 @@
     <string name="compare_overall">All Transport</string>
     <string name="compare_bus">Compared to Bus</string>
     <string name="compare_uber">Compared to Uber</string>
-    <string name="switch_right">&gt;</string>
-    <string name="switch_left">&lt;</string>
+    <string name="switch_right">&gt;&gt;</string>
+    <string name="switch_left">&lt;&lt;</string>
     <string name="today_savings_bus">6.34</string>
     <string name="month_savings_bus">60.45</string>
     <string name="total_savings_bus">600.56</string>
     <string name="today_savings_uber">6.00</string>
     <string name="month_savings_uber">63.00</string>
     <string name="total_savings_uber">634.00</string>
+    <string name="target">Target</string>
+    <string name="daily_target">£20</string>
+    <string name="monthly_target">£200</string>
+    <string name="overall_target">£2000</string>
     <string name="title_activity_manual_code_enter">ManualCodeEnter</string>
 
     <string name="trees_planted_today">Trees Planted Today</string>

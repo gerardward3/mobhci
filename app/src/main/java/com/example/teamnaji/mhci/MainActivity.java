@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -63,7 +64,7 @@ import android.widget.TextView;
 //    }
 //}
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     private BottomNavigationView bottomNavigationView;
 
 
@@ -74,14 +75,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigation);
         loadFragment(new HomeFragment());
         setupBottomNavigationView();
-    }
 
-    public void launchFitness(View v){
-        startActivity(new Intent(MainActivity.this, Fitness.class));
-    }
-
-    public void launchMoney(View v){
-        startActivity(new Intent(MainActivity.this, Money.class));
     }
 
     public void unlockBike(View v) {
@@ -113,15 +107,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-
     private void loadFragment(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.flContainer, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }
-
 
     public void switchLeft(View v){
         TextView transport_type = (TextView)findViewById(R.id.transport_type);
