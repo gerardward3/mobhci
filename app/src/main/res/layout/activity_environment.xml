@@ -8,43 +8,114 @@
     tools:layout_editor_absoluteY="81dp">
 
 
-
     <LinearLayout
         android:id="@+id/horizon1"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent" >
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
             android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="Trees planted this month:"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="Reduced CO2 emissions:"
             android:textSize="16sp"
-            android:textColor="@color/green700"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_weight="1"
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="52dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="Reduced CO2 emmisions:"
-            android:textColor="@color/green700"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBar4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="185dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="65"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="117dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/progressBar4"
+                android:layout_alignLeft="@+id/progressBar4"
+                android:layout_alignTop="@+id/progressBar4"
+                android:layout_alignEnd="@+id/progressBar4"
+                android:layout_alignRight="@+id/progressBar4"
+                android:layout_alignBottom="@+id/progressBar4"
+                android:layout_marginStart="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="77dp"
+                android:gravity="center"
+                android:text="@string/emissions"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="89dp"
+                android:layout_height="18dp"
+                android:layout_alignStart="@+id/progressBar4"
+                android:layout_alignLeft="@+id/progressBar4"
+                android:layout_alignTop="@+id/progressBar4"
+                android:layout_alignEnd="@+id/progressBar4"
+                android:layout_alignRight="@+id/progressBar4"
+                android:layout_alignBottom="@+id/progressBar4"
+                android:layout_marginStart="49dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="92dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:text="@string/target"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/progressBar4"
+                android:layout_alignLeft="@+id/progressBar4"
+                android:layout_alignTop="@+id/progressBar4"
+                android:layout_alignEnd="@+id/progressBar4"
+                android:layout_alignRight="@+id/progressBar4"
+                android:layout_alignBottom="@+id/progressBar4"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="107dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="37dp"
+                android:gravity="center"
+                android:text="3 tCO2e"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
 
 
     </LinearLayout>
@@ -52,16 +123,31 @@
     <LinearLayout
         android:id="@+id/horizon2"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:orientation="horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/horizon1"
         tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="Trees planted this month:"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1">
+
 
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -145,93 +231,6 @@
 
         </RelativeLayout>
 
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <ProgressBar
-                android:id="@+id/progressBar4"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="185dp"
-                android:layout_height="160dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:background="@drawable/circle_shape"
-                android:indeterminate="false"
-                android:max="100"
-                android:progress="65"
-                android:progressDrawable="@drawable/circular_progress_bar"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView7" />
-
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="117dp"
-                android:layout_height="35dp"
-                android:layout_alignStart="@+id/progressBar4"
-                android:layout_alignLeft="@+id/progressBar4"
-                android:layout_alignTop="@+id/progressBar4"
-                android:layout_alignEnd="@+id/progressBar4"
-                android:layout_alignRight="@+id/progressBar4"
-                android:layout_alignBottom="@+id/progressBar4"
-                android:layout_marginStart="33dp"
-                android:layout_marginLeft="33dp"
-                android:layout_marginTop="48dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginRight="35dp"
-                android:layout_marginBottom="77dp"
-                android:gravity="center"
-                android:text="@string/emissions"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView26"
-                android:layout_width="89dp"
-                android:layout_height="18dp"
-                android:layout_alignStart="@+id/progressBar4"
-                android:layout_alignLeft="@+id/progressBar4"
-                android:layout_alignTop="@+id/progressBar4"
-                android:layout_alignEnd="@+id/progressBar4"
-                android:layout_alignRight="@+id/progressBar4"
-                android:layout_alignBottom="@+id/progressBar4"
-                android:layout_marginStart="49dp"
-                android:layout_marginLeft="49dp"
-                android:layout_marginTop="92dp"
-                android:layout_marginEnd="47dp"
-                android:layout_marginRight="47dp"
-                android:layout_marginBottom="50dp"
-                android:gravity="center"
-                android:text="@string/target"
-                android:textSize="10sp" />
-
-            <TextView
-                android:id="@+id/textView27"
-                android:layout_width="85dp"
-                android:layout_height="30dp"
-                android:layout_alignStart="@+id/progressBar4"
-                android:layout_alignLeft="@+id/progressBar4"
-                android:layout_alignTop="@+id/progressBar4"
-                android:layout_alignEnd="@+id/progressBar4"
-                android:layout_alignRight="@+id/progressBar4"
-                android:layout_alignBottom="@+id/progressBar4"
-                android:layout_marginStart="52dp"
-                android:layout_marginLeft="52dp"
-                android:layout_marginTop="107dp"
-                android:layout_marginEnd="48dp"
-                android:layout_marginRight="48dp"
-                android:layout_marginBottom="37dp"
-                android:gravity="center"
-                android:text="3 tCO2e"
-                android:textSize="10sp" />
-
-        </RelativeLayout>
     </LinearLayout>
 
     <ScrollView
