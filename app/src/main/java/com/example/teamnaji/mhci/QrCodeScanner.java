@@ -10,8 +10,11 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.SparseArray;
+import android.view.KeyEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.gms.vision.CameraSource;
@@ -51,6 +54,24 @@ public class QrCodeScanner extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr_code_scanner);
+
+        final EditText enterCodeText = findViewById(R.id.enterCodeText);
+        enterCodeText.setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                // If the event is a key-down event on the "enter" button
+                if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    // Perform action on key press
+                    String bikeCode = enterCodeText.getText().toString();
+                    Intent i = new Intent(QrCodeScanner.this, CodeAcceptedScreen.class);
+                    i.putExtra("bikeCode", bikeCode);
+                    startActivity(i);
+                }
+                return false;
+            }
+        });
+
+
 
         cameraPreview = (SurfaceView) findViewById(R.id.cameraPreview);
         txtResult = (TextView) findViewById(R.id.txtResult);

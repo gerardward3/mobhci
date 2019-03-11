@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cameraPreview" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/enterCodeText"
         android:layout_width="168dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
