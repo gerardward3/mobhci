@@ -181,6 +181,40 @@ public class MainActivity extends AppCompatActivity{
         months_savings.setText(new_months_savings);
         total_savings.setText(new_total_savings);
     }
+
+
+
+    public void onCardClick(View v) {
+        switch (v.getId()) {
+            case  R.id.moneyCard: {
+
+                loadFragment(new MoneyFragment());
+                if(this.bottomNavigationView.getSelectedItemId()!= R.id.bottombaritem_money){
+                    this.bottomNavigationView.setSelectedItemId(R.id.bottombaritem_money);
+                }
+                break;
+
+            }
+
+            case R.id.fitnessCard: {
+                loadFragment(new FitnessFragment());
+
+                if(this.bottomNavigationView.getSelectedItemId()!= R.id.bottombaritem_fitness){
+                    this.bottomNavigationView.setSelectedItemId(R.id.bottombaritem_fitness);
+                }
+                break;
+            }
+
+            case R.id.environmentCard: {
+                loadFragment(new EnvironmentFragment());
+                if(this.bottomNavigationView.getSelectedItemId()!= R.id.bottombaritem_environment){
+                    this.bottomNavigationView.setSelectedItemId(R.id.bottombaritem_environment);
+                }
+                break;
+            }
+        }
+    }
+
 }
 
 

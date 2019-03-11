@@ -25,7 +25,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="25dp">
+                android:layout_marginTop="25dp"
+                android:onClick="onCardClick">
 
                 <ImageView
                     android:src="@drawable/gradient_background"
@@ -97,7 +98,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/environmentCard">
+                android:id="@+id/environmentCard"
+                android:onClick="onCardClick">
 
                 <ImageView
                     android:src="@drawable/gradient_background"
@@ -160,7 +162,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/fitnessCard">
+                android:id="@+id/fitnessCard"
+                android:onClick="onCardClick">
 
                 <ImageView
                     android:src="@drawable/gradient_background"
