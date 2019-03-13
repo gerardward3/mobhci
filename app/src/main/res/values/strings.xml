@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">*App Name Goes Here*</string>
+    <string name="app_name">BestBike</string>
     <string name="unlock_bike">Unlock Bike</string>
     <string name="result_text_default">Please focus camera to QR code</string>
 
